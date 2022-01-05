@@ -1,17 +1,18 @@
+// SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.0;
 
 contract Inbox {
-    bytes32 public message;
+    string  public message;
 
-    function inbox(bytes32 initialMessage) public {
+    function inbox(string memory initialMessage) public {
         message = initialMessage;
     }
 
-    function setMessage(bytes32 newMessage) public {
+    function setMessage(string memory newMessage) public {
         message = newMessage;
     }
 
-    function getMessage() public view returns (bytes32) {
+    function getMessage() public view returns (string memory) {
         return message;
     }
 }
