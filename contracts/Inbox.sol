@@ -2,7 +2,7 @@
 pragma solidity ^0.8.0;
 
 contract Inbox {
-    string  public message;
+    string public message;
 
     function inbox(string memory initialMessage) public {
         message = initialMessage;
@@ -12,7 +12,14 @@ contract Inbox {
         message = newMessage;
     }
 
-    function getMessage() public view returns (string memory) {
-        return message;
+    function  doMath(int a, int b) public pure {
+        a + b;
+        b - a; 
+        a * b;
+        a == 0;
     }
 }
+
+
+
+// Nemonic tooth rescue frown bicycle road  during  cup story spoil engage obey area
